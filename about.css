@@ -1,0 +1,127 @@
+/* About page: unique section styles only.
+   The brand strip at the bottom reuses the existing Jewelry page classes:
+   .ow-brands-section, .ow-section-intro, .ow-eyebrow, .ow-brand-grid, .ow-brand */
+
+.ow-about-page {
+  --about-ink: #242522;
+  --about-muted: #696b65;
+  --about-accent: #b38a52;
+  --about-cream: #f7f4ee;
+  --about-line: #e8e3d9;
+  color: var(--about-ink);
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.7;
+  overflow: hidden;
+}
+.ow-about-page *,
+.ow-about-page *::before,
+.ow-about-page *::after { box-sizing: border-box; }
+.ow-about-page img { display: block; max-width: 100%; height: auto; }
+.ow-about-page h1,
+.ow-about-page h2,
+.ow-about-page h3,
+.ow-about-page p { margin-top: 0; }
+.ow-about-page h1,
+.ow-about-page h2,
+.ow-about-page h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.ow-about-page h1 { font-size: clamp(2.3rem, 4.4vw, 4.2rem); margin-bottom: 22px; }
+.ow-about-page h2 { font-size: clamp(1.9rem, 3.3vw, 3rem); margin-bottom: 18px; }
+.ow-about-page h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.ow-about-page p { color: var(--about-muted); }
+.ow-about-eyebrow {
+  display: inline-block;
+  color: var(--about-accent);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .17em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.ow-about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--about-ink);
+  color: #fff;
+  padding: 14px 22px;
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: background .25s, transform .25s;
+}
+.ow-about-button:hover { background: var(--about-accent); color: #fff; transform: translateY(-2px); }
+
+.ow-about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 520px;
+  background: var(--about-cream);
+}
+.ow-about-hero__content { align-self: center; max-width: 760px; padding: clamp(32px, 6.5vw, 92px); }
+.ow-about-hero__content p { margin-bottom: 28px; max-width: 620px; }
+.ow-about-hero__image { min-height: 420px; }
+.ow-about-hero__image img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; }
+
+.ow-about-why,
+.ow-about-team { max-width: 1240px; margin: auto; padding: clamp(55px, 7.5vw, 100px) 24px; }
+.ow-about-section-heading { max-width: 850px; margin: 0 auto 42px; text-align: center; }
+.ow-about-section-heading p { margin-bottom: 0; }
+.ow-about-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 38px; }
+.ow-about-benefit { position: relative; padding: 32px; border: 1px solid var(--about-line); background: #fff; }
+.ow-about-benefit__number { display: block; color: var(--about-accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; margin-bottom: 24px; }
+.ow-about-benefit p { margin-bottom: 0; }
+
+.ow-about-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--about-line); border-block: 1px solid var(--about-line); }
+.ow-about-stat { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; min-height: 150px; padding: 25px 15px; background: var(--about-cream); text-align: center; }
+.ow-about-stat strong { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 500; line-height: 1; }
+.ow-about-stat span { color: var(--about-muted); font-size: .82rem; }
+
+.ow-about-purpose { display: grid; grid-template-columns: .9fr 1.1fr; align-items: stretch; background: var(--about-cream); }
+.ow-about-purpose__image { min-height: 600px; }
+.ow-about-purpose__image img { width: 100%; height: 100%; min-height: 600px; object-fit: cover; }
+.ow-about-purpose__content { align-self: center; padding: clamp(35px, 6vw, 85px); }
+.ow-about-purpose__item + .ow-about-purpose__item { margin-top: 38px; padding-top: 32px; border-top: 1px solid var(--about-line); }
+.ow-about-purpose__item p { margin-bottom: 0; }
+
+.ow-about-team__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 900px; margin: 0 auto; }
+.ow-about-person { background: #fff; border: 1px solid var(--about-line); }
+.ow-about-person > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; }
+.ow-about-person__body { padding: 25px 28px; }
+.ow-about-person__body p { margin-bottom: 0; }
+
+.ow-about-service-highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #292a27; }
+.ow-about-service { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 34px 20px; text-align: center; border-right: 1px solid rgba(255,255,255,.14); }
+.ow-about-service:last-child { border-right: 0; }
+.ow-about-service img { width: 48px; height: 48px; object-fit: contain; margin-bottom: 18px; }
+.ow-about-service h3 { color: #fff; font-family: "Montserrat", Arial, sans-serif; font-size: 1rem; font-weight: 600; }
+.ow-about-service p { color: #d4d1ca; font-size: .88rem; margin-bottom: 0; }
+
+.ow-about-offer { padding: clamp(55px, 8vw, 100px) 24px; background: var(--about-cream); text-align: center; }
+.ow-about-offer__content { max-width: 760px; margin: auto; }
+.ow-about-offer__content p { margin: 0 auto 26px; max-width: 660px; }
+
+@media (max-width: 900px) {
+  .ow-about-hero { grid-template-columns: 1fr; }
+  .ow-about-hero__image { order: -1; min-height: 320px; }
+  .ow-about-hero__image img { min-height: 320px; max-height: 440px; }
+  .ow-about-benefits { grid-template-columns: 1fr 1fr; }
+  .ow-about-purpose { grid-template-columns: 1fr; }
+  .ow-about-purpose__image, .ow-about-purpose__image img { min-height: 340px; max-height: 450px; }
+  .ow-about-service-highlights { grid-template-columns: 1fr 1fr; }
+  .ow-about-service:nth-child(2) { border-right: 0; }
+  .ow-about-service:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.14); }
+}
+@media (max-width: 600px) {
+  .ow-about-hero__content { padding: 36px 22px 45px; }
+  .ow-about-benefits,
+  .ow-about-team__grid { grid-template-columns: 1fr; }
+  .ow-about-stats { grid-template-columns: 1fr 1fr; }
+  .ow-about-stat { min-height: 125px; }
+  .ow-about-service { padding: 28px 12px; }
+  .ow-about-service h3 { font-size: .92rem; }
+}
