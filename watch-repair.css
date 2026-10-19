@@ -1,0 +1,99 @@
+/* Watch Repair page-specific styles only. Header/footer and shared site sections are not included. */
+.ow-watch-page {
+  --ow-watch-gold: #d9a067;
+  --ow-watch-ink: #252525;
+  --ow-watch-muted: #696969;
+  --ow-watch-cream: #f7f4ef;
+  color: var(--ow-watch-ink);
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.75;
+  overflow: hidden;
+}
+.ow-watch-page *,
+.ow-watch-page *::before,
+.ow-watch-page *::after { box-sizing: border-box; }
+.ow-watch-page img { display: block; max-width: 100%; height: auto; }
+.ow-watch-page h1,
+.ow-watch-page h2,
+.ow-watch-page h3,
+.ow-watch-page p { margin-top: 0; }
+.ow-watch-page h1,
+.ow-watch-page h2,
+.ow-watch-page h3 { line-height: 1.2; }
+.ow-watch-page h1 { font-size: clamp(2.35rem, 4.2vw, 4.4rem); font-weight: 500; letter-spacing: -.04em; margin-bottom: 24px; }
+.ow-watch-page h2 { font-size: clamp(2rem, 3.3vw, 3.25rem); font-weight: 500; letter-spacing: -.035em; margin-bottom: 22px; }
+.ow-watch-page h3 { font-size: 1.22rem; font-weight: 500; margin-bottom: 14px; }
+.ow-watch-container { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.ow-watch-section { padding: 100px 0; }
+.ow-watch-eyebrow { display: inline-block; margin-bottom: 17px; color: var(--ow-watch-gold); font-size: .76rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
+.ow-watch-hero { padding: 82px 0 90px; background: var(--ow-watch-cream); }
+.ow-watch-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: clamp(42px, 7vw, 100px); }
+.ow-watch-hero-copy > p { max-width: 610px; margin-bottom: 30px; color: var(--ow-watch-muted); font-size: 1rem; }
+.ow-watch-hero-image { position: relative; isolation: isolate; padding: 0 18px 18px 0; }
+.ow-watch-hero-image img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover; }
+.ow-watch-image-accent { position: absolute; z-index: -1; right: 0; bottom: 0; width: 68%; height: 68%; background: var(--ow-watch-gold); }
+.ow-watch-button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; padding: 14px 22px; border: 1px solid var(--ow-watch-gold); background: var(--ow-watch-gold); color: #fff !important; text-decoration: none !important; font-size: .88rem; transition: background .25s ease, color .25s ease; }
+.ow-watch-button:hover { background: transparent; color: var(--ow-watch-ink) !important; }
+.ow-watch-section-heading { max-width: 720px; margin: 0 auto 48px; text-align: center; }
+.ow-watch-section-heading > p { color: var(--ow-watch-muted); }
+.ow-watch-services { background: #fff; }
+.ow-watch-service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.ow-watch-service-card { position: relative; padding: 35px 30px 32px; border: 1px solid #e9e5df; background: #fff; transition: transform .25s ease, box-shadow .25s ease; }
+.ow-watch-service-card:hover { transform: translateY(-5px); box-shadow: 0 18px 42px rgba(25, 25, 25, .07); }
+.ow-watch-service-number { position: absolute; top: 22px; right: 24px; color: #c9c2b8; font-size: .78rem; letter-spacing: .12em; }
+.ow-watch-service-icon { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 26px; border-radius: 50%; background: var(--ow-watch-cream); color: var(--ow-watch-gold); font-size: 1.7rem; }
+.ow-watch-service-card p,
+.ow-watch-service-card li { color: var(--ow-watch-muted); font-size: .91rem; }
+.ow-watch-service-card ul { margin: 12px 0 0; padding-left: 20px; }
+.ow-watch-service-card li { margin-bottom: 8px; }
+.ow-watch-service-card strong { color: var(--ow-watch-ink); font-weight: 500; }
+.ow-watch-story { background: var(--ow-watch-cream); }
+.ow-watch-story-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: clamp(44px, 8vw, 110px); }
+.ow-watch-story-image { position: relative; }
+.ow-watch-story-image img { width: 100%; aspect-ratio: 4 / 4.5; object-fit: cover; }
+.ow-watch-image-caption { display: flex; justify-content: space-around; gap: 10px; padding: 15px 12px; background: var(--ow-watch-ink); color: #fff; font-size: .72rem; letter-spacing: .04em; }
+.ow-watch-story-copy p { color: var(--ow-watch-muted); margin-bottom: 18px; }
+.ow-watch-text-link { display: inline-flex; align-items: center; gap: 18px; margin-top: 10px; color: var(--ow-watch-ink); text-decoration: none; font-size: .9rem; border-bottom: 1px solid var(--ow-watch-gold); padding-bottom: 5px; }
+.ow-watch-text-link span { color: var(--ow-watch-gold); font-size: 1.2rem; }
+.ow-watch-faq { background: #fff; }
+.ow-watch-faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(42px, 8vw, 110px); align-items: start; }
+.ow-watch-faq-heading { margin: 0; text-align: left; }
+.ow-watch-faq-heading > p { color: var(--ow-watch-muted); }
+.ow-watch-faq-label { display: flex; align-items: center; justify-content: space-between; margin-top: 35px; padding: 18px 20px; background: var(--ow-watch-cream); color: var(--ow-watch-ink); font-size: .82rem; letter-spacing: .13em; text-transform: uppercase; }
+.ow-watch-faq-label span { color: var(--ow-watch-gold); font-size: 1.4rem; }
+.ow-watch-faq-item { border-bottom: 1px solid #e5e1db; }
+.ow-watch-faq-item:first-child { border-top: 1px solid #e5e1db; }
+.ow-watch-faq-item summary { position: relative; padding: 22px 38px 22px 0; cursor: pointer; list-style: none; font-size: 1rem; font-weight: 500; }
+.ow-watch-faq-item summary::-webkit-details-marker { display: none; }
+.ow-watch-faq-item summary::after { content: "+"; position: absolute; right: 3px; top: 17px; color: var(--ow-watch-gold); font-size: 1.45rem; font-weight: 400; }
+.ow-watch-faq-item[open] summary::after { content: "−"; }
+.ow-watch-faq-item p { padding: 0 24px 20px 0; margin: 0; color: var(--ow-watch-muted); font-size: .92rem; }
+.ow-watch-cta { padding: 72px 0; background: var(--ow-watch-ink); color: #fff; }
+.ow-watch-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+.ow-watch-cta-inner > div { max-width: 760px; }
+.ow-watch-cta h2 { margin-bottom: 18px; }
+.ow-watch-cta p { color: #d0d0d0; margin-bottom: 12px; }
+.ow-watch-button-light { flex-shrink: 0; background: var(--ow-watch-gold); }
+.ow-watch-button-light:hover { color: #fff !important; border-color: #fff; }
+@media (max-width: 900px) {
+  .ow-watch-section { padding: 76px 0; }
+  .ow-watch-hero-grid, .ow-watch-story-grid { grid-template-columns: 1fr 1fr; gap: 34px; }
+  .ow-watch-service-grid { grid-template-columns: 1fr 1fr; }
+  .ow-watch-service-card:last-child { grid-column: 1 / -1; }
+  .ow-watch-faq-grid { grid-template-columns: 1fr; gap: 35px; }
+  .ow-watch-faq-heading { max-width: none; }
+  .ow-watch-faq-label { display: none; }
+}
+@media (max-width: 620px) {
+  .ow-watch-container { width: min(100% - 34px, 1180px); }
+  .ow-watch-hero { padding: 55px 0 60px; }
+  .ow-watch-hero-grid, .ow-watch-story-grid, .ow-watch-service-grid { grid-template-columns: 1fr; }
+  .ow-watch-hero-grid { gap: 35px; }
+  .ow-watch-hero-image { max-width: 470px; }
+  .ow-watch-section { padding: 60px 0; }
+  .ow-watch-service-card:last-child { grid-column: auto; }
+  .ow-watch-service-card { padding: 30px 24px; }
+  .ow-watch-image-caption { font-size: .65rem; }
+  .ow-watch-cta { padding: 55px 0; }
+  .ow-watch-cta-inner { align-items: flex-start; flex-direction: column; gap: 25px; }
+}

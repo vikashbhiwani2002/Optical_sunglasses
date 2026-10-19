@@ -1,0 +1,18 @@
+/* Eyeglass Repair page-specific additions only.
+   Shared layout, cards, FAQ, buttons and CTA styles are reused from watch-repair.css. */
+.ow-eyeglass-page .ow-watch-hero-image img {
+  aspect-ratio: 4 / 4.2;
+  object-position: center;
+}
+.ow-eyeglass-page .ow-watch-story-image img {
+  aspect-ratio: 4 / 4.5;
+  object-position: center;
+}
+.ow-eyeglass-page .ow-watch-service-card p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 620px) {
+  .ow-eyeglass-page .ow-watch-image-caption {
+    flex-wrap: wrap;
+  }
+}
